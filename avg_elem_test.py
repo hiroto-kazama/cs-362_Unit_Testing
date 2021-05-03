@@ -6,7 +6,7 @@ class testCase(unittest.TestCase):
         Var = avg_elem.cal_average([1, 2, 3])
         self.assertEqual(Var, 2)
 
-    def test_avg_02(self):
+    def test_avg_02(self):#fail condition
         Var = avg_elem.cal_average([])
         self.assertEqual(Var, 0)
 

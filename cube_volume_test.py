@@ -15,5 +15,8 @@ class testCaseCube(unittest.TestCase):
     def test_cube_03(self):
         self.assertEqual(cube_volume.cube(-1), -1)
 
+    def test_cube_04(self): #fail condition
+        self.assertEqual(cube_volume.cube(zero), 0)
+
 if __name__ == '__main__':
     unittest.main()
